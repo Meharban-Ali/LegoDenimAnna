@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:fragment="layout(content)">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+      <!--cdn code for icon and font-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet"  href="/css/style.css">
+    <title>Base</title>
+
+</head>
+<body class="bg_color">
+    <nav class="navbar navbar-expand-lg navbar-dark gradient-font-col">
+        <div class="container-fluid">
+            <a href="/"><img src="../images/logo_img/logo1.jpg" alt="" srcset="" width="50px" height="50px" style="border-radius: 17px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5"  aria-current="page" href="/"> Home</a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 mx-2" aria-current="page" href="#about"> About-Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" href="/"><i class="fa-solid fa-user mx-2"></i> Book an appointment</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 mx-2" href="contact">
+                            Contact-Us</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 mx-2" href="collection">
+                            Our Collection</a>
+                    </li>
+                        <a href="https://www.instagram.com/lego_denim_anna?igsh=MWVtZHBnMzFsaG5tbQ=="><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" class="mt-2 mx-2" alt="" srcset="" width="30px" height="30px"></a>
+                </ul>
+    
+    
+            </div>
+        </div>
+    </nav>
+    
+    <div th:replace="${content}"></div> 
+
+<div class="container mb-4">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="text-bold text-center text-warning fs-3">Our Location</p>
+            <div class="card text-center mt-2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.02517117313!2d72.74109972220518!3d19.082197839009237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b642a0ba92a1%3A0x2c50ff8c1bdf9f67!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" 
+              allowfullscreen 
+              loading="lazy" height="550px">
+
+              </iframe>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <p class="text-bold text-center text-warning fs-3">About-Us</p>
+            <div class="card text-center mt-2 bg_color text-white" id="about">
+               <p class="fs-5 text-center">Welcome to <span class="text-warning fs-4">LEGO Denim Anna</span> Clothes Shop, where fashion meets quality and creativity. Our store is designed for those who cherish unique, stylish, and premium-quality clothing..</p>
+
+               
+                <h1 class="text-warning">What We Offer</h1>
+                <p class="text-center fs-5">
+                We specialize in a diverse range of denim wear for all ages and styles, from classic jeans to custom jackets and unique tops. Each item is crafted with high-quality materials, meticulous attention to detail, and an eye for the latest trends.</p>
+
+                <p class="text-bold text-center fs-5"><span class="fs-1 text-warning">Visit Us Today!</span><br>
+                    Explore our collection at LEGO Denim Anna Clothes Shop, where denim dreams come true. We’re always here to help you find the perfect fit, whether you're shopping online or visiting us in-store. We look forward to being a part of your fashion journey!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer start-->
+<div class="container-fluid p-1 bg-dark text-center text-white">
+    <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-4">
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left">
+
+        <!-- Company Info Section -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Lego Denim Anna</h5>
+          <p>Lego Denim Anna is a premium range of denim wear crafted for fashion-conscious individuals seeking comfort, style, and durability. Our collection features the latest trends in denim, with high-quality fabric and unique designs that cater to every taste. From classic blue jeans to stylish denim jackets, each piece in the Lego Denim Anna collection...</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+          <p><a href="#" class="text-light" style="text-decoration: none;">Home</a></p>
+          <p><a href="#" class="text-light" style="text-decoration: none;">About Us</a></p>
+          <p><a href="#" class="text-light" style="text-decoration: none;">Services</a></p>
+          <p><a href="contact" class="text-light" style="text-decoration: none;">Contact Us</a></p>
+        </div>
+
+        <!-- Contact Info Section -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+          <p><i class="fas fa-home mr-3"></i> 1234 Street Name, Delhi, India</p>
+          <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p><i class="fas fa-phone mr-3"></i> +123 456 7890</p>
+          <p><i class="fas fa-print mr-3"></i> +123 456 7891</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold">Follow Us</h5>
+          <a href="#" class="text-light mr-4"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light mr-4"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light mr-4"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light mr-4"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Footer Copyright -->
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p class="text-center text-md-left">© 2023 Copyright:
+            <a href="#" class="text-light" style="text-decoration: none;">
+              <strong> legodenimanna.com</strong>
+            </a>
+          </p>
+        </div>
+
+        <div class="col-md-5 col-lg-4">
+          <p class="text-center text-md-right">Designed by <strong>@Meharban Ali</strong></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Font Awesome for Social Icons (optional) -->
+   <script src="/javascript/myscript.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</div>
+<!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

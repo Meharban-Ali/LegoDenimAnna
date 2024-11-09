@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <section class="mt-1">
+        <!-- Start Carousel slider-->
+       <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../images/slider_img/slider_1.JPG" class="d-block w-100" alt="..." height="450px">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/slider_img/slider_2.JPG" class="d-block w-100" alt="..." height="450px">
+            </div>
+            <div class="carousel-item">
+                <img src="../images/slider_img/slider_3.JPG" class="d-block w-100" alt="..." height="450px">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../images/slider_img/slider_4.JPG" class="d-block w-100" alt="..." height="450px">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../images/slider_img/slider_5.JPG" class="d-block w-100" alt="..." height="450px">
+            </div>
+
+            <div class="carousel-item">
+                <img src="../images/slider_img/slider_6.JPG" class="d-block w-100" alt="..." height="450px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<!--  End carousel slider-->
+
+  <!-- main section start -->
+  <div class="container">
+    <div class="row">
+        <p class="text-center fs-4 text-bold text-warning">Product Category</p>
+    <div class="col-md-6 p-3" id="about">
+        <div class="card bg_color text-center mt-2">
+            <h1 class="text-warning">Lego Denim Anna</h1><br>
+
+            <p style="color: #ffff;" class="fs-6 font-color">Lego Denim Anna is a premium range of denim wear crafted for fashion-conscious individuals seeking comfort, style, and durability. Our collection features the latest trends in denim, with high-quality fabric and unique designs that cater to every taste. From classic blue jeans to stylish denim jackets, each piece in the Lego Denim Anna collection.</p>
+
+                <p class="font-color"><span class="fs-5 text-warning">High-Quality Material-</span> Made from top-grade denim fabric, ensuring longevity and resistance to wear.</p>
+                <p class="font-color"><span class="fs-5 text-warning">Trendy Designs- </span>Trendy Designs: Our collection includes a range of styles, including slim-fit jeans.</p>
+                <p class="font-color"> <span class="fs-5 text-warning">Comfort and Fit-</span>Lego Denim Anna prioritizes comfort with flexible materials</p>
+                <p class="font-color"><span class="fs-5 text-warning">Affordable Pricing- </span>Offered at competitive wholesale prices, affordable denim.</p>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 p-2 img_part">
+        <div class="row">
+
+            <!-- Product-1 -->
+            <div class="col-md-6 mb-3 shadow-lg rounded">
+                <div class="card">
+                    <div class="card-body text-center">
+                       <a href="collection"> <img src="../images/product_img/IMG_2174.JPG" width="100%" height="180px"></a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Product-2 -->
+           <div class="col-md-6 mb-3 shadow-lg rounded">
+               <div class="card">
+                   <div class="card-body text-center">
+                      <a href="collection"> <img src="../images/product_img/IMG_2164.JPG" width="100%" height="180px"></a>
+                       
+                   </div>
+               </div>
+           </div>
+
+            <!-- Product-3 -->
+           <div class="col-md-6 mb-3 shadow-lg rounded">
+               <div class="card">
+                   <div class="card-body text-center">
+                      <a href="collection"> <img src="../images/product_img/IMG_2182.JPG" width="100%" height="180px"></a>
+                   </div>
+               </div>
+           </div>
+            <!-- Product-4 -->
+           <div class="col-md-6 mb-3 shadow-lg rounded">
+               <div class="card">
+                   <div class="card-body text-center">
+                      <a href="collection"> <img src="../images/product_img/IMG_2261.JPG" width="100%" height="180px"></a>
+                   </div>
+               </div>
+           </div>
+        
+
+
+        </div>
+        </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+</div>
+   <!-- main section end -->
+
+
+   <!-- Our Collection start-->
+   <div class="container">
+    <div class="row">
+       <a href="collection" style="text-decoration: none;"><p class="text-center fs-4 text-bold text-warning">Our Collection</p></a>
+    <div class="col-md-6 p-3">
+        <div class="card text-center mt-2">
+           <a href="collection"><img src="../images/product_img/IMG_2261.JPG" width="100%" height="600px"></a>
+        </div>
+    </div>
+
+
+    <div class="col-md-6 p-2 img_part1">
+        <div class="row">
+            <!-- Product-1 -->
+            <div class="col-md-6 mb-3 shadow-lg rounded">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <video src="../videos/vd1.mp4" width="100%" height="180px" autoplay muted loop>
+
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Product-2 -->
+           <div class="col-md-6 mb-3 shadow-lg rounded">
+               <div class="card">
+                   <div class="card-body text-center">
+                       <video src="../videos/vd2.mp4" width="100%" height="180px" autoplay muted loop>
+
+                       </video>
+                    
+                   </div>
+               </div>
+           </div>
+            <!-- Product-3 -->
+           <!-- <div class="col-md-6 mb-3 shadow-lg rounded"> -->
+               <div class="card gradient-font-col">
+                   <div class="card-body text-center">
+                       <video src="../videos/vd11.mp4" width="100%" height="320px" autoplay muted loop>
+
+                       </video>
+                    
+                   </div>
+               </div>
+           <!-- </div> -->
+    
+
+        </div>
+        </div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    </div>
+</div>
+    <!-- Our Collection End -->
+
+    </section>
+</body>
+</html>

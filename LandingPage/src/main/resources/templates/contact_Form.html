@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+<section class="gradient-font-col">
+    <div class="container p-5 mt-1">
+        <div class="row">
+
+            <div class="col-md-2">
+                <div class=" text-center">
+                  
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card shadow-lg p-3 mb-5 bg-body rounded ms-4">
+                    <div class="card-header  text-center bg-white">
+                        <h1 class="text-dark">Contact Form</h1>
+                    </div>
+                    <div class="card-body">
+
+
+                        <form onsubmit="sendToWhatsApp();">
+                            <div class="row">
+                            <div class="col">
+                                <label for="exampleInputName1" class="form-label fs-5">Full Name</label>
+                                <input type="text" class="form-control" id="exampleInputName1" name="name" required >
+                            </div>
+                                <div class="col">
+                                    <label for="exampleInputNumber1" class="form-label fs-5">Mobile No</label>
+                                    <input type="number" class="form-control" id="exampleInputNumber1" name="number" required>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                            <div class="col">
+                                <label for="exampleInputEmail1" class="form-label fs-5">Email Id</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" name="email" required>
+                            </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="exampleInputAddress1" class="form-label fs-5">Address</label>
+                                    <input type="text" class="form-control" id="exampleInputAddress1" name="" required>
+                                </div>
+
+                                <div class="col">
+                                    <label for="exampleInputCity1" class="form-label fs-5">City</label>
+                                    <input type="text" class="form-control" id="exampleInputCity1" name="city" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col">
+                                    <label for="exampleInputState1" class="form-label fs-5">State</label>
+                                    <input type="text" class="form-control" id="exampleInputState1" name="state" required>
+                                </div>
+
+                                <div class="col">
+                                    <label for="exampleInputPincode1" class="form-label fs-5">Pincode</label>
+                                    <input type="number" class="form-control" id="exampleInputPincode1" name="pincode" required>
+                                </div>
+                            </div>
+
+                             <!-- Form Group for Textarea -->
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Your Message</label>
+                                    <textarea class="form-control" id="exampleTextarea" rows="5" placeholder="Enter your message here" name="message"></textarea>
+                                </div>
+                           
+                            <br>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                <label class="form-check-label fs-5" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary col-md-12 fs-5 text-white">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
